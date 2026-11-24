@@ -125,7 +125,10 @@ dialog.addEventListener('click', event => {
 });
 
 document.addEventListener('keydown', event => {
-  if (event.key === 'Escape') closeMenu();
+  if (event.key !== 'Escape' || dialog.open || !menu.classList.contains('open')) return;
+
+  closeMenu();
+  if (menuButton.getClientRects().length > 0) menuButton.focus();
 });
 
 form.addEventListener('submit', event => {

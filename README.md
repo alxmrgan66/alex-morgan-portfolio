@@ -58,9 +58,7 @@ git push origin main
 | Responsive design | CSS breakpoints at 1000, 850, and 620 px |
 | Interactive UI/UX | Hover effects, modal, tooltips, filters, theme, menu |
 | Professional appearance | Typography, gradients, spacing, panels and feedback states |
-| Copilot workflow summary | See `COPILOT_REFLECTION.md` |
-
-**Copilot-specific note:** The code is ready to review, but an actual Copilot session and honest reflection are needed before claiming that Copilot produced or refined it. Follow `COPILOT_REFLECTION.md` to complete that part of the assignment.
+| Copilot workflow summary | [Brief reflection](COPILOT_REFLECTION.md) and [prompts, applied changes, and checks](COPILOT_EVIDENCE.md) |
 
 ## Example project content
 

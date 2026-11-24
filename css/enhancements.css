@@ -1,15 +1,4 @@
 /* Alex Styles: visual refinement, responsive layouts, tooltips and project dialog. */
-:root {
-  --bg: #ffffff;
-  --surface: #f7f8fd;
-  --text: #202740;
-  --muted: #59647d;
-  --line: #e4e8f2;
-  --accent: #5e55d9;
-  --accent-dark: #483db5;
-  --shadow: 0 18px 45px rgb(25 31 69 / 8%);
-}
-
 body {
   -webkit-font-smoothing: antialiased;
 }
@@ -494,17 +483,6 @@ body {
   background: var(--line);
 }
 
-body.dark {
-  --bg: #131c32;
-  --surface: #1b2940;
-  --text: #f1f4ff;
-  --muted: #c1cbe0;
-  --line: #38455f;
-  --accent: #ada7ff;
-  --accent-dark: #d2cfff;
-  --shadow: 0 18px 50px rgb(0 0 0 / 16%);
-}
-
 body.dark .hero-art {
   background: radial-gradient(circle at 30% 30%, #4e4678, transparent 48%),
               radial-gradient(circle at 75% 75%, #1b625d, transparent 50%), #222d47;
@@ -591,8 +569,30 @@ body.dark .project-card:hover {
     padding: 23px;
   }
 
+  .skills {
+    position: relative;
+  }
+
   .skill-chip {
+    position: static;
     font-size: 15px;
+    transition-property: background, border-color;
+  }
+
+  .skill-chip:hover,
+  .skill-chip:focus-visible {
+    transform: none;
+  }
+
+  .skill-chip::before {
+    display: none;
+  }
+
+  .skill-chip::after {
+    left: 0;
+    right: 0;
+    width: auto;
+    max-width: 100%;
   }
 }
 
